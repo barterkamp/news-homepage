@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 26px;
+  color: hsl(236deg, 13%, 42%);
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 40px;
+  color: hsl(240deg, 100%, 5%);
+}
+@media (min-width: 644px) {
+  h1 {
+    font-size: 5.6rem;
+    line-height: 56px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 32px;
+  color: hsl(35deg, 77%, 62%);
+}
+@media (min-width: 644px) {
+  h2 {
+    font-size: 4rem;
+    line-height: 40px;
+  }
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: hsl(36deg, 100%, 99%);
+}
+
+h4 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 24px;
+  color: hsl(240deg, 100%, 5%);
+}
+
+.wrapper {
+  padding: 1.6rem;
+  margin: 0 auto;
+}
+@media (min-width: 644px) {
+  .wrapper {
+    padding: 16.5rem;
+  }
+}
+
+.main-grid-layout {
+  display: grid;
+  gap: 6.4rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas: "one" "two" "three";
+}
+@media (min-width: 644px) {
+  .main-grid-layout {
+    grid-template-areas: "one one two" "three three three";
+  }
+}/*# sourceMappingURL=main.css.map */

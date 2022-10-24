@@ -1,0 +1,25 @@
+.wrapper {
+  padding: 1.6rem;
+  margin: 0 auto;
+
+  @media (min-width: 644px) {
+    padding: 16.5rem;
+  }
+}
+
+.main-grid-layout {
+  display: grid;
+  gap: 6.4rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 
+  'one'
+  'two'
+  'three';
+
+  @media (min-width: 644px) {
+    grid-template-areas:
+    'one one two'
+    'three three three';
+  }
+}
+
