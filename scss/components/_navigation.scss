@@ -1,0 +1,26 @@
+.header {
+  margin-top: 2.8rem;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+  align-items: center;
+
+  &__logo img {
+    width: 45px;
+  }
+}
+
+.navigation {
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__link a {
+    text-decoration: none;
+    color: $dark-grayish-blue;
+
+    
+  }
+}

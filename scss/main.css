@@ -120,4 +120,82 @@ h4 {
   .main-grid-layout {
     grid-template-areas: "one one two" "three three three";
   }
+}
+
+.btn {
+  background-color: hsl(5deg, 85%, 63%);
+  outline: none;
+  border: none;
+  color: hsl(36deg, 100%, 99%);
+  letter-spacing: 4.375px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  padding: 1.3rem 3.5rem;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.btn:hover, .btn:active {
+  background-color: hsl(240deg, 100%, 5%);
+}
+
+.header {
+  margin-top: 2.8rem;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+  align-items: center;
+}
+.header__logo img {
+  width: 45px;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+}
+.navigation__link a {
+  text-decoration: none;
+  color: hsl(236deg, 13%, 42%);
+}
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.main-article__heading {
+  margin-bottom: 1.6rem;
+}
+.main-article__paragraph {
+  margin-bottom: 2.4rem;
+}
+
+.new-articles {
+  background-color: hsl(240deg, 100%, 5%);
+  padding: 2.4rem 2rem;
+}
+.new-articles__preview {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid hsl(236deg, 13%, 42%);
+}
+.new-articles__preview:last-child {
+  border-bottom: none;
+}
+.new-articles__link {
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+  margin-top: 3.8rem;
+}
+.new-articles__link h3 {
+  transition: all 0.4s;
+}
+.new-articles__link h3:hover, .new-articles__link h3:active {
+  color: hsl(35deg, 77%, 62%);
+}
+.new-articles__paragraph {
+  margin-bottom: 2.9rem;
 }/*# sourceMappingURL=main.css.map */

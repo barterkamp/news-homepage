@@ -1,0 +1,13 @@
+.main-article {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  &__heading {
+    margin-bottom: 1.6rem;
+  }
+
+  &__paragraph {
+    margin-bottom: 2.4rem;
+  }
+}

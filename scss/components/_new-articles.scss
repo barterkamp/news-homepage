@@ -1,0 +1,33 @@
+.new-articles {
+  background-color: $very-dark-blue;
+  padding: 2.4rem 2rem;
+
+  &__preview {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $dark-grayish-blue;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    margin-bottom: 0.8rem;
+    margin-top: 3.8rem;
+
+    & h3 {
+      transition: all 0.4s;
+
+      &:hover,
+      &:active {
+        color: $soft-orange;
+      }
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: 2.9rem;
+  }
+}

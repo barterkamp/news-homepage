@@ -1,0 +1,19 @@
+.btn {
+  background-color: $oft-red;
+  outline: none;
+  border: none;
+  color: $off-white;
+  letter-spacing: 4.375px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  padding: 1.3rem 3.5rem;
+  transition: all 0.4s;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: $very-dark-blue;
+  }
+}
