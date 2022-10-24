@@ -17,39 +17,122 @@
       rel="stylesheet"
     />
 
-    <title>News homepage | coded by Bart Erkamp</title>
+    <title>News homepage | Coded by Bart Erkamp</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
-  <body>
-    <p> Home New Popular Trending Categories 
-      
-    <h1>The Bright Future of Web 3.0?</h1> We dive
-    into the next evolution of the web that claims to put the power of the
-    platforms back into the hands of the people. But is it really fulfilling its</p>
-    promise? Read more New Hydrogen VS Electric Cars Will hydrogen-fueled cars
-    ever catch up to EVs? The Downsides of AI Artistry What are the possible
-    adverse effects of on-demand AI image generation? Is VC Funding Drying Up?
-    Private funding by VC firms is down 50% YOY. We take a look at what that
-    means. 01 Reviving Retro PCs What happens when old PCs are given modern
-    upgrades? 02 Top 10 Laptops of 2022 Our best picks for various needs and
-    budgets. 03 The Growth of Gaming How the pandemic has sparked fresh
-    opportunities.
 
-    <div class="attribution">
+  <body class="wrapper">
+
+    <!-- navigation -->
+    <header class="header"> 
+      <div class="header__logo"><img src="./assets/images/logo.svg" alt="logo"></div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__link">Home</li>
+          <li class="navigation__link">New</li>
+          <li class="navigation__link">Popular</li>
+          <li class="navigation__link">Trending</li>
+          <li class="navigation__link">Categories</li>
+        </ul>
+        <div class="navigation__hamburger">
+          <span class="navigation__bar"></span>
+          <span class="navigation__bar"></span>
+          <span class="navigation__bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="main-grid-layout">
+
+      <article class="main-article">
+        <picture class="main-article__image">
+            <source
+              srcset="
+              /assets/images/image-web-3-mobile.jpg
+              "
+              media="(max-width: 643px)"
+            />
+  
+            <img
+              src="/assets/images/image-web-3-desktop.jpg"
+              alt="colorfull blocks connecting together "
+            />
+        </picture>
+        <section class="main-article__textcontent">
+          <h1 class="main-article__heading">The Bright Future of Web 3.0?</h1>
+          <div class="main-article__text-container">
+          <p class="main-article__paragraph">We dive
+            into the next evolution of the web that claims to put the power of the
+            platforms back into the hands of the people. But is it really fulfilling its
+            promise?</p>
+            <button class="btn">read more</button>
+          </div>
+        </div>
+      </article>
+
+      <aside class="new-articles">
+        <h2 class="new-article__heading">New</h2>
+        <section class="new-articles__preview">
+          <a href="#" class="new-articles__link"><h3>New Hydrogen VS Electric Cars</h3></a>
+          <p class="new-articles__paragraph">Will hydrogen-fueled cars
+            ever catch up to EVs?</p>
+        </section>
+        <section class="new-articles__preview">
+          <a href="#" class="new-articles__link"><h3>The Downsides of AI Artistry</h3></a>
+          <p class="new-articles__paragraph">What are the possible
+            adverse effects of on-demand AI image generation?</p>
+        </section>
+        <section class="new-articles__preview">
+          <a href="#" class="new-articles__link"><h3>TIs VC Funding Drying Up?</h3></a>
+          <p class="new-articles__paragraph">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </section>
+      </aside>
+
+      <section class="top-articles">
+        <!-- first article -->
+        <div class="top-articles__container">
+          <div class="top-articles__image">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="A retro pc">
+          </div>
+          <div class="top-articles__textcontent">
+            <p class="top-articles__number">01</p>
+            <a href="#" class="top-articles__link"><h4>Reviving Retro PCs</h4></a>
+            <p class="top-article__paragraph">What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <!-- second article -->
+        <div class="top-articles__container">
+          <div class="top-articles__image">
+            <img src="./assets/images/image-top-laptops.jpg" alt="Close-up of a black keyboard with glowing red letters">
+          </div>
+          <div class="top-articles__textcontent">
+            <p class="top-articles__number">02</p>
+            <a href="#" class="top-articles__link"><h4>Top 10 Laptops of 2022</h4></a>
+            <p class="top-article__paragraph">Our best picks for various needs and
+              budgets.</p>
+          </div>
+        </div>
+        <!-- third article -->
+        <div class="top-articles__container">
+          <div class="top-articles__image">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="A left hand throwing a white gamecontroller in the air">
+          </div>
+          <div class="top-articles__textcontent">
+            <p class="top-articles__number">03</p>
+            <a href="#" class="top-articles__link"><h4>The Growth of Gaming</h4></a>
+            <p class="top-article__paragraph">How the pandemic has sparked fresh
+              opportunities.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </footer>
   </body>
 </html>
