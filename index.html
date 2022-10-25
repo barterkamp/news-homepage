@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/newspaper.svg"
+    />
     <link rel="stylesheet" href="./scss/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,15 +21,12 @@
     <script src="./navigation.js" defer></script>
 
     <title>News homepage | Coded by Bart Erkamp</title>
-
   </head>
 
   <body class="wrapper">
-
-    <header class="header"> 
-
+    <header class="header">
       <div class="header__logo">
-        <img src="./assets/images/logo.svg" alt="logo">
+        <img src="./assets/images/logo.svg" alt="logo" />
       </div>
 
       <nav class="navigation">
@@ -43,32 +46,29 @@
         <span class="navigation__bar"></span>
         <span class="navigation__bar"></span>
       </div>
-      
     </header>
 
     <main class="main-grid-layout">
-
       <article class="main-article">
         <picture class="main-article__image">
-            <source
-              srcset="
-              /assets/images/image-web-3-mobile.jpg
-              "
-              media="(max-width: 643px)"
-            />
-  
-            <img
-              src="/assets/images/image-web-3-desktop.jpg"
-              alt="colorfull blocks connecting together "
-            />
+          <source
+            srcset="/assets/images/image-web-3-mobile.jpg"
+            media="(max-width: 643px)"
+          />
+
+          <img
+            src="/assets/images/image-web-3-desktop.jpg"
+            alt="colorfull blocks connecting together "
+          />
         </picture>
         <section class="main-article__textcontent">
           <h1 class="main-article__heading">The Bright Future of Web 3.0?</h1>
           <div class="main-article__text-container">
-          <p class="main-article__paragraph">We dive
-            into the next evolution of the web that claims to put the power of the
-            platforms back into the hands of the people. But is it really fulfilling its
-            promise?</p>
+            <p class="main-article__paragraph">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
             <button class="btn">read more</button>
           </div>
         </section>
@@ -77,18 +77,30 @@
       <aside class="new-articles">
         <h2 class="new-articles__heading">New</h2>
         <section class="new-articles__preview">
-          <a href="#" class="new-articles__link"><h3>New Hydrogen VS Electric Cars</h3></a>
-          <p class="new-articles__paragraph">Will hydrogen-fueled cars
-            ever catch up to EVs?</p>
+          <a href="#" class="new-articles__link"
+            ><h3>New Hydrogen VS Electric Cars</h3></a
+          >
+          <p class="new-articles__paragraph">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
         </section>
         <section class="new-articles__preview">
-          <a href="#" class="new-articles__link"><h3>The Downsides of AI Artistry</h3></a>
-          <p class="new-articles__paragraph">What are the possible
-            adverse effects of on-demand AI image generation?</p>
+          <a href="#" class="new-articles__link"
+            ><h3>The Downsides of AI Artistry</h3></a
+          >
+          <p class="new-articles__paragraph">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
         </section>
         <section class="new-articles__preview">
-          <a href="#" class="new-articles__link"><h3>TIs VC Funding Drying Up?</h3></a>
-          <p class="new-articles__paragraph zero-margin">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          <a href="#" class="new-articles__link"
+            ><h3>TIs VC Funding Drying Up?</h3></a
+          >
+          <p class="new-articles__paragraph zero-margin">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
         </section>
       </aside>
 
@@ -96,40 +108,58 @@
         <!-- first article -->
         <div class="top-articles__container">
           <div class="top-articles__image">
-            <img src="./assets/images/image-retro-pcs.jpg" alt="A retro personal computer">
+            <img
+              src="./assets/images/image-retro-pcs.jpg"
+              alt="A retro personal computer"
+            />
           </div>
           <div class="top-articles__textcontent">
             <p class="top-articles__number">01</p>
-            <a href="#" class="top-articles__link"><h4>Reviving Retro PCs</h4></a>
-            <p class="top-article__paragraph">What happens when old PCs are given modern upgrades?</p>
+            <a href="#" class="top-articles__link"
+              ><h4>Reviving Retro PCs</h4></a
+            >
+            <p class="top-article__paragraph">
+              What happens when old PCs are given modern upgrades?
+            </p>
           </div>
         </div>
         <!-- second article -->
         <div class="top-articles__container">
           <div class="top-articles__image">
-            <img src="./assets/images/image-top-laptops.jpg" alt="Close-up of a black keyboard with glowing red letters">
+            <img
+              src="./assets/images/image-top-laptops.jpg"
+              alt="Close-up of a black keyboard with glowing red letters"
+            />
           </div>
           <div class="top-articles__textcontent">
             <p class="top-articles__number">02</p>
-            <a href="#" class="top-articles__link"><h4>Top 10 Laptops of 2022</h4></a>
-            <p class="top-article__paragraph">Our best picks for various needs and
-              budgets.</p>
+            <a href="#" class="top-articles__link"
+              ><h4>Top 10 Laptops of 2022</h4></a
+            >
+            <p class="top-article__paragraph">
+              Our best picks for various needs and budgets.
+            </p>
           </div>
         </div>
         <!-- third article -->
         <div class="top-articles__container">
           <div class="top-articles__image">
-            <img src="./assets/images/image-gaming-growth.jpg" alt="A left hand throwing a white game controller in the air">
+            <img
+              src="./assets/images/image-gaming-growth.jpg"
+              alt="A left hand throwing a white game controller in the air"
+            />
           </div>
           <div class="top-articles__textcontent">
             <p class="top-articles__number">03</p>
-            <a href="#" class="top-articles__link"><h4>The Growth of Gaming</h4></a>
-            <p class="top-article__paragraph">How the pandemic has sparked fresh
-              opportunities.</p>
+            <a href="#" class="top-articles__link"
+              ><h4>The Growth of Gaming</h4></a
+            >
+            <p class="top-article__paragraph">
+              How the pandemic has sparked fresh opportunities.
+            </p>
           </div>
         </div>
       </section>
     </main>
-
   </body>
 </html>
