@@ -140,7 +140,6 @@ h4 {
     grid-template-areas: "one one two" "three three three";
     grid-column-gap: 3rem;
     grid-row-gap: 7rem;
-    margin-bottom: 0;
   }
 }
 
