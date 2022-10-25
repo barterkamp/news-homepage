@@ -3,11 +3,18 @@
   display: flex;
   position: relative;
   justify-content: space-between;
-  margin-bottom: 3.2rem;
   align-items: center;
+
+  @media (min-width: 644px) {
+    margin-top: 9rem;
+  }
 
   &__logo img {
     width: 45px;
+
+    @media (min-width: 644px) {
+      width: 65px;
+    }
   }
 }
 
@@ -15,12 +22,26 @@
   &__list {
     display: flex;
     list-style: none;
+
+    @media (min-width: 644px) {
+      gap: 4rem;
+    }
   }
 
-  &__link a {
-    text-decoration: none;
-    color: $dark-grayish-blue;
+  &__link {
+    @media (min-width: 644px) {
+      font-size: 1.5rem;
+    }
 
-    
+    & a {
+      text-decoration: none;
+      color: $dark-grayish-blue;
+      transition: all 0.4s;
+
+      &:hover,
+      a:active {
+        color: $soft-red;
+      }
+    }
   }
 }

@@ -1,6 +1,7 @@
 .new-articles {
   background-color: $very-dark-blue;
   padding: 2.4rem 2rem;
+  grid-area: two;
 
   &__preview {
     display: flex;
@@ -18,7 +19,7 @@
     margin-top: 3.8rem;
 
     & h3 {
-      transition: all 0.4s;
+      transition: all 0.3s;
 
       &:hover,
       &:active {
@@ -30,4 +31,8 @@
   &__paragraph {
     margin-bottom: 2.9rem;
   }
+}
+
+.zero-margin {
+  margin-bottom: 0;
 }

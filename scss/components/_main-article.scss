@@ -2,6 +2,21 @@
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  grid-area: one;
+
+  &__image {
+    @media (min-width: 644px) {
+      grid-column: span 2;
+    }
+  }
+
+  &__textcontent {
+    @media (min-width: 644px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+  }
 
   &__heading {
     margin-bottom: 1.6rem;
@@ -9,5 +24,9 @@
 
   &__paragraph {
     margin-bottom: 2.4rem;
+
+    @media (min-width: 644px) {
+      margin-bottom: 2.9rem;
+    }
   }
 }

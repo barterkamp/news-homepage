@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   @media (min-width: 644px) {
-    padding: 16.5rem;
+    padding: 0;
   }
 }
 
@@ -11,15 +11,29 @@
   display: grid;
   gap: 6.4rem;
   grid-auto-columns: 1fr;
-  grid-template-areas: 
-  'one'
-  'two'
-  'three';
+  grid-template-areas:
+    "one"
+    "two"
+    "three";
+  margin-top: 3.2rem;
+  margin-bottom: 8rem;
 
-  @media (min-width: 644px) {
+  @media (min-width: 644px) and (max-width: 1100px) {
     grid-template-areas:
-    'one one two'
-    'three three three';
+      "one one one"
+      "two two two"
+      "three three three";
+    grid-column-gap: 3rem;
+    grid-row-gap: 7rem;
+    margin-bottom: 6rem;
+  }
+
+  @media (min-width: 1150px) {
+    grid-template-areas:
+      "one one two"
+      "three three three";
+    grid-column-gap: 3rem;
+    grid-row-gap: 7rem;
+    margin-bottom: 0;
   }
 }
-
