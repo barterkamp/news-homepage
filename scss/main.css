@@ -2,9 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-* {
   margin: 0;
 }
 
@@ -134,7 +131,7 @@ h4 {
   .main-grid-layout {
     grid-template-areas: "one one one" "two two two" "three three three";
     grid-column-gap: 3rem;
-    grid-row-gap: 7rem;
+    grid-row-gap: 4rem;
     margin-bottom: 6rem;
   }
 }
@@ -176,7 +173,12 @@ h4 {
 .header.active {
   overflow-x: visible;
 }
-@media (min-width: 644px) {
+@media (min-width: 644px) and (max-width: 1100px) {
+  .header {
+    margin-top: 4rem;
+  }
+}
+@media (min-width: 1101px) {
   .header {
     margin-top: 9rem;
   }
