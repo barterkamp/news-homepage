@@ -16,6 +16,8 @@
 
   &__image {
     max-width: 10rem;
+    height: 127px;
+    object-fit: cover;
   }
 
   &__textcontent {

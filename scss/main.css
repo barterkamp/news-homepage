@@ -37,7 +37,7 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 input,
@@ -353,6 +353,9 @@ h4 {
 }
 .top-articles__image {
   max-width: 10rem;
+  height: 127px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .top-articles__textcontent {
   display: flex;
